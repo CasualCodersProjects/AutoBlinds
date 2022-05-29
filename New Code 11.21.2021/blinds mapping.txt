@@ -1,0 +1,9 @@
+left driver:
+enable goes pin 8
+step goes pin 12
+dir goes pin 16
+
+right driver:
+enable on pin 8
+step pin 38
+dir pin 40
