@@ -1,0 +1,21 @@
+ChakraUI
+MaterialUI
+AntDesign
+
+These are the big three component libs.
+can find smaller ones online and use them.
+start with MaterialUI
+download elements. premade things (components)
+such as buttons or sliders or calenders.
+
+
+
+I think a nice, clean/simple UI could really just be a page that's horizontally or vertically (I perfer three vertical bars for 19:9)
+then thorw a switch at the top of each segment to enable or disable a given stepper motor. Possibly deisng the page to look like the PCB?
+can maybe show status or potentiometer position at the top. Perhaps a semicricle or arc thing? Color code each one as well? RGB or some
+part of the CC Colors. Dark mode by default ofc.
+
+then below that is the main thing. I need to create a table of sorts for open and close times for each day.
+Nevermind. We're going horizontal.
+
+I could maybe try to do the table thing like seen in when2meet, but that'd be... 48 boxes tall and 7 wide. That's excessive.

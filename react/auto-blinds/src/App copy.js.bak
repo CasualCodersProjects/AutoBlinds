@@ -1,0 +1,66 @@
+import logo from './logo.svg';
+import { Button } from 'antd';
+import { TimePicker, Space, Switch } from 'antd';
+import moment from 'moment';
+import './App.css';
+
+const format = 'HH:mm';
+
+const onChange = (checked: boolean) => {
+  console.log(`switch to ${checked}`);
+};
+
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header" >
+      <Space direction="Horizontal" size="large">
+        <text>Monday</text>
+        <text>Tuesday</text>
+        <text>Wednesday</text>
+        <text>Thursday</text>
+        <text>Friday</text>
+        <text>Saturday</text>
+        <text>Sunday</text>
+      </Space>
+      <Switch defaultChecked onChange={onChange} />
+      <Space direction="Horizontal" size="large">
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+      </Space>
+      <Space direction="Horizontal" size="large">
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+      </Space>
+        {/* <Button type = "dashed" color='red'>test</Button>
+        <TimePicker defaultValue={moment('00:00 time', format)} format={format} />
+        <TimePicker defaultValue={moment('00:00', format)} format={format} />
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a> */}
+      </header>
+    </div>
+  );
+}
+
+export default App;

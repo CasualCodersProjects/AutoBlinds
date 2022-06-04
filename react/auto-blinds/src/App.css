@@ -1,0 +1,57 @@
+@import 'antd/dist/antd.css';
+
+
+.container {
+  background-color: #0e0e0e;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 7rem 31fr 31fr 31fr;
+  grid-template-columns: 7rem 93fr;
+  grid-gap: 8px;
+  grid-template-areas:
+  "logo header"
+  "motor1 motor1"
+  "motor2 motor2"
+  "motor3 motor3"  
+  ;
+}
+/* Use REM for everything according to chandler.
+ */
+
+.logo {
+  background-color: #e0e0e0;
+  grid-area: logo;
+}
+
+.header {
+  background-color: #e0e0e0;
+  grid-area: header;
+}
+
+.motor1 {
+  background-color: #e0e0e0;
+  grid-area: motor1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motor2 {
+  background-color: #e0e0e0;
+  grid-area: motor2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.motor3 {
+  background-color: #e0e0e0;
+  grid-area: motor3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
