@@ -6,52 +6,80 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-rows: 7rem 31fr 31fr 31fr;
-  grid-template-columns: 7rem 93fr;
+  grid-template-rows: 7fr 31fr 31fr 31fr;
+  grid-template-columns: 15fr 85fr;
   grid-gap: 8px;
   grid-template-areas:
-  "logo header"
-  "motor1 motor1"
-  "motor2 motor2"
-  "motor3 motor3"  
-  ;
+  "header header"
+  "motor1 schedule1"
+  "motor2 schedule2"
+  "motor3 schedule3";
 }
 /* Use REM for everything according to chandler.
  */
 
-.logo {
-  background-color: #e0e0e0;
-  grid-area: logo;
+.header {
+  background-color: #1e1e1e;
+  grid-area: header;
+  border-radius: 5px;
 }
 
-.header {
-  background-color: #e0e0e0;
-  grid-area: header;
+.schedule1 {
+  background-color: #1e1e1e;
+  grid-area: schedule1;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  border-radius: 5px;
+}
+
+.schedule2 {
+  background-color: #1e1e1e;
+  grid-area: schedule2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.schedule3 {
+  background-color: #1e1e1e;
+  grid-area: schedule3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .motor1 {
-  background-color: #e0e0e0;
+  background-color: #1e1e1e;
   grid-area: motor1;
   display: flex;
   justify-content: center;
   /* flex-direction: column; */
   align-items: center;
+  border-radius: 5px;
 }
 
 .motor2 {
-  background-color: #e0e0e0;
+  background-color: #1e1e1e;
   grid-area: motor2;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 
 .motor3 {
-  background-color: #e0e0e0;
+  background-color: #1e1e1e;
   grid-area: motor3;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }

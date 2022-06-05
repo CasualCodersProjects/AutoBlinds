@@ -1,8 +1,7 @@
-import { TimePicker, Space, Switch, Input, Progress } from 'antd';
-import moment from 'moment';
 import './App.css';
-import ControlsBlock from './components/ControlsBlock';
-
+import Schedule from './components/Schedule';
+import LiveInfo from './components/LiveInfo';
+import React from 'react'
 // logo Header
 // motor1
 // motor2
@@ -13,21 +12,30 @@ import ControlsBlock from './components/ControlsBlock';
 // };
 
 function App() {
+  document.body.classList.add("dark");
   return (
 <div className="container">
-    <div className="logo">Logo</div>
-    <div className="header">Header</div>
-    <div className="motor1">
-      <ControlsBlock/>
-    </div>
+  <div className="logo">Logo</div>  
+  <div className="header">Header</div>
+  <div className="schedule1">
+    <Schedule/>
+  </div>
+  <div className="schedule2">
+    <Schedule/>
+  </div>
+  <div className="schedule3">
+    <Schedule/>
+  </div>
+  <div className="motor1">
+    <LiveInfo name="Motor1 Enable"/>
+  </div>
+  <div className="motor2">
+    <LiveInfo name="Motor2 Enable"/>
+  </div>
+  <div className="motor3">
+    <LiveInfo name="Motor3 Enable"/>
+  </div>
 
-    <div className="motor2">
-      <ControlsBlock/>
-    </div>
-    
-    <div className="motor3">
-      <ControlsBlock/>
-    </div>
 </div>
   );
 }
