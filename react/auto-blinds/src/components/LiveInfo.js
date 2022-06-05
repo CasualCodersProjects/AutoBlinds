@@ -1,29 +1,36 @@
 import { Space, InputNumber, Progress, Switch } from 'antd';
-import React from 'react'
+import React, { useState } from 'react';
 
-
+// Colors:
+const Teal =      '#4ec9b0';
+const LightBlue = '#9cdcfe';
+const Grey =      '#1e1e1e';
+const DarkGrey =  '#0e0e0e';
 
 function LiveInfo(props){
-    const [disabled, setDisabled] = React.useState(true);
-
+    const [disabled, setDisabled] = useState(true);
     const Toggle = () => { setDisabled(!disabled); }
+
+    const [stepValue, setStepValue] = useState(0);
 
 
     return(
-        <Space direction='vertical' align='center' size="middle" style={{padding: '10px'}}>
+        <Space direction='vertical' align='center' size="middle" className='LiveInfo general-theme'>
             <Space direction='horizontal' align='center' size="small" >
                 <text>{props.name}</text>
-                <Switch defaultChecked={false} onChange={Toggle}/>
+                <Switch defaultChecked={false} onChange={Toggle} style={
+                    {backgroundColor: LightBlue, borderColor: Teal}
+                }/>
             </Space>
+
             <Space direction='horizontal' align='center' size="small" >
                 <text>Move +/-</text>
-                <InputNumber defaultValue={0} disabled={disabled}/>
+                <InputNumber defaultValue={0} value={stepValue} onChange={setStepValue} disabled={disabled} style={
+                    {backgroundColor: DarkGrey, borderColor: Teal, color: LightBlue, accentColor: LightBlue}
+                }/>
             </Space>
-            <Progress type='dashboard' width={80} strokeWidth={15}
-            showInfo={false} percent={50} disabled={disabled}
-            strokeColor="#4ec9b0"/>
 
-
+            <Progress type='dashboard' strokeWidth={15} showInfo={false} percent={50} disabled={disabled} strokeColor={Teal} trailColor={DarkGrey}/>
         </Space>
     )
 }

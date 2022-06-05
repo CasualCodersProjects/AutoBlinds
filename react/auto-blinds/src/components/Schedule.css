@@ -1,0 +1,47 @@
+:root {
+    --teal: #4ec9b0;
+    --light-blue: #9cdcfe;
+    --grey: #1e1e1e;
+    --dark-grey: #0e0e0e;
+}
+
+.dropdown-menu {
+    background-color: #0e0e0e !important; 
+    accent-color: var(--teal) !important;
+    border-color: var(--teal)!important;
+    color: #4ec9b0 !important;
+  }
+  
+  .ant-picker-panel {
+    background-color: #0e0e0e !important;
+    accent-color: #4ec9b0 !important;
+    border-color: #4ec9b0!important;
+    color: #4ec9b0 !important;
+  }
+  .ant-picker-time-panel-column:not(:first-child){
+    border-left-color: var(--teal) !important;
+  }
+  .ant-picker-input > input{
+    color: #9cdcfe !important;
+  }
+  .ant-picker-input > input::placeholder{
+    color: #9cdcfe !important;
+  }
+  .ant-picker-time-panel-cell-inner{
+    background-color: #0e0e0e !important;
+    accent-color: #4ec9b0 !important;
+    border-color: #4ec9b0!important;
+    color: #9cdcfe !important;
+  }
+  .ant-picker-now-btn{
+    color: #4ec9b0 !important;
+  }
+  .ant-picker-footer{
+    border-top-color: var(--teal) !important;
+  }
+  
+  .ant-picker-ok > button{
+    background-color: var(--teal) !important;
+    border-color: var(--teal) !important;
+    color: var(--grey) !important;
+  }

@@ -1,12 +1,20 @@
 import { TimePicker, Space } from 'antd';
 import React from 'react'
 
+// Colors:
+// Teal:        #4ec9b0
+// Light Blue:  #9cdcfe
+// Grey:        #1e1e1e
+// Dark Grey:   #0e0e0e
+
 function DayOfTheWeek(props){
     return(
-        <Space direction='vertical' align='center' size="small" style={{padding: '1fr'}}>
+        <Space direction='vertical' align='center' size="small" style={
+            {padding: '1fr', color: "#4ec9b0"}
+            }>
             <text>{props.day}</text>
-            <TimePicker className="timePicker1" format="HH:mm" />
-            <TimePicker className="timePicker1" format="HH:mm" aria-label='Hello'/>
+            <TimePicker className="openTime dropdown-menu" format="HH:mm" placeholder='Open Time'/>
+            <TimePicker className="closeTime dropdown-menu" format="HH:mm" placeholder='Close Time'/>
         </Space>
     )
 }

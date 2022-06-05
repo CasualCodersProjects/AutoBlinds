@@ -1,8 +1,25 @@
-@import 'antd/dist/antd.css';
+@import '~antd/dist/antd.css';
+@import '~components/Schedule.css';
+@import '~components/LiveInfo.css';
 
+/* Colors:
+Teal:        #4ec9b0
+Light Blue:  #9cdcfe
+Grey:        #1e1e1e
+Dark Grey:   #0e0e0e */
+
+:root {
+  --teal: #4ec9b0;
+  --light-blue: #9cdcfe;
+  --grey: #1e1e1e;
+  --dark-grey: #0e0e0e;
+}
 
 .container {
   background-color: #0e0e0e;
+  accent-color: #0e0e0e;
+  color: #4ec9b0;
+  font-size: medium;
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -15,8 +32,7 @@
   "motor2 schedule2"
   "motor3 schedule3";
 }
-/* Use REM for everything according to chandler.
- */
+
 
 .header {
   background-color: #1e1e1e;

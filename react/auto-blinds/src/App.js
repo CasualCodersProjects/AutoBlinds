@@ -1,21 +1,17 @@
 import './App.css';
 import Schedule from './components/Schedule';
 import LiveInfo from './components/LiveInfo';
-import React from 'react'
-// logo Header
-// motor1
-// motor2
-// motor3
 
-// const onChange = (checked: boolean) => {
-//   console.log(`switch to ${checked}`);
-// };
+// Colors:
+// Teal:        #4ec9b0
+// Light Blue:  #9cdcfe
+// Grey:        #1e1e1e
+// Dark Grey:   #0e0e0e
+
 
 function App() {
-  document.body.classList.add("dark");
   return (
 <div className="container">
-  <div className="logo">Logo</div>  
   <div className="header">Header</div>
   <div className="schedule1">
     <Schedule/>
@@ -35,7 +31,6 @@ function App() {
   <div className="motor3">
     <LiveInfo name="Motor3 Enable"/>
   </div>
-
 </div>
   );
 }
