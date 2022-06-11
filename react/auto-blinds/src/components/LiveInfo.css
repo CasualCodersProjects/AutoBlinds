@@ -5,10 +5,6 @@
     --dark-grey: #0e0e0e;
   }
 
-
-
-
-
 .ant-switch-handle::before{
     background-color: var(--grey) !important;
 }

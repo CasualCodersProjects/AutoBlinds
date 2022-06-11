@@ -12,6 +12,15 @@ function LiveInfo(props){
     const Toggle = () => { setDisabled(!disabled); }
 
     const [stepValue, setStepValue] = useState(0);
+    function sendSteps(){
+        fetch(`http://192.168.0.14:8000/sendsteps?steps=${stepValue}`, {
+            method: "POST",
+            mode: "cors",
+        })
+        .then(response => response.json())
+        .then(data => console.log(data));
+        setStepValue(0);
+    }
 
 
     return(
@@ -25,7 +34,7 @@ function LiveInfo(props){
 
             <Space direction='horizontal' align='center' size="small" >
                 <text>Move +/-</text>
-                <InputNumber defaultValue={0} value={stepValue} onChange={setStepValue} disabled={disabled} style={
+                <InputNumber defaultValue={0} value={stepValue} onChange={setStepValue} disabled={disabled} onPressEnter={sendSteps} style={
                     {backgroundColor: DarkGrey, borderColor: Teal, color: LightBlue, accentColor: LightBlue}
                 }/>
             </Space>

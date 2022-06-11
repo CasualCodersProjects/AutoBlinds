@@ -1,6 +1,7 @@
 @import '~antd/dist/antd.css';
 @import '~components/Schedule.css';
 @import '~components/LiveInfo.css';
+@import '~antd/dist/antd.dark.css';
 
 /* Colors:
 Teal:        #4ec9b0
