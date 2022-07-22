@@ -16,6 +16,16 @@ function App() {
     setScheduleData(data);
   }, [])
 
+  async function saveScheduleDataToServer(data){
+    const resp = await fetch(`http://localhost:80/update_schedule?schedule_data=${JSON.stringify(data)}`,{
+      method: 'POST',
+      mode: "cors",
+    })
+    const apidata = await resp.json()
+    setScheduleData(data)
+    return
+  };
+
   return (
     <div className="container">
       <div className="motor1">
@@ -40,13 +50,13 @@ function App() {
 
 
       <div className="schedule1">
-        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={setScheduleData} motor="motor1"/> : null}
+        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={saveScheduleDataToServer} motor="motor1"/> : null}
       </div>
       <div className="schedule2" >
-        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={setScheduleData} motor="motor2"/> : null}
+        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={saveScheduleDataToServer} motor="motor2"/> : null}
       </div>
       <div className="schedule3" >
-        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={setScheduleData} motor="motor3"/> : null}
+        {scheduleData ? <Schedule scheduleData={scheduleData} setScheduleData={saveScheduleDataToServer} motor="motor3"/> : null}
       </div>
 
     </div>

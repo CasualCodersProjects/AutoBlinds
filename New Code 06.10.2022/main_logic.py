@@ -35,7 +35,7 @@ def alive():
     return {"alive": True}
 
 @app.post("/update_schedule")
-def update_schedule(schedule_data: dict):
+def update_schedule(schedule_data):
     print("Updating schedule...")
     print(schedule_data)
     # schedule = open("Schedule.json", "w")

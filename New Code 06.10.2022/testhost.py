@@ -22,11 +22,11 @@ def get_schedule():
     return schedule_data
 
 @app.post("/update_schedule")
-def update_schedule(schedule_data: dict):
+def update_schedule(schedule_data):
     print("Updating schedule...")
     print(schedule_data)
     schedule = open("Schedule.json", "w")
-    schedule.write(json.dumps(schedule_data))
+    schedule.write(schedule_data)
     schedule.close()
     return {"Schedule": "Updated"}
 
