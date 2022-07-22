@@ -8,8 +8,7 @@
         "Saturday"  :   ["07:00", "22:00"],
         "Sunday"    :   ["07:00", "22:00"]
     },
-    "startAngle" : 0,
-    "endAngle" : 360,
+    "steps" : 0,
     "time" : 30
 },
 
@@ -23,8 +22,7 @@
         "Saturday"  :   ["07:00", "22:00"],
         "Sunday"    :   ["07:00", "22:00"]
     },
-    "startAngle" : 0,
-    "endAngle" : 360,
+    "steps" : 0,
     "time" : 30
 },
 
@@ -38,7 +36,6 @@
         "Saturday"  :   ["07:00", "22:00"],
         "Sunday"    :   ["07:00", "22:00"]
     },
-    "startAngle" : 0,
-    "endAngle" : 360,
+    "steps" : 0,
     "time" : 30
 }}

@@ -1,6 +1,7 @@
 import './App.css';
 import Schedule from './components/Schedule';
 import LiveInfo from './components/LiveInfo';
+import Config from './components/Config';
 
 // Colors:
 // Teal:        #4ec9b0
@@ -12,7 +13,6 @@ import LiveInfo from './components/LiveInfo';
 function App() {
   return (
 <div className="container">
-  <div className="header">Header</div>
   <div className="schedule1">
     <Schedule/>
   </div>
@@ -30,6 +30,16 @@ function App() {
   </div>
   <div className="motor3">
     <LiveInfo name="Motor3 Enable"/>
+  </div>
+
+  <div className="config1">
+    <Config/>
+  </div>
+  <div className="config2">
+    <Config/>
+  </div>
+  <div className="config3">
+    <Config/>
   </div>
 </div>
   );

@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name a4988)(type Legacy)(uri ${KIPRJMOD}/a4988.lib)(options "")(descr ""))
+  (lib (name "a4988")(type "Legacy")(uri "${KIPRJMOD}/a4988.lib")(options "")(descr ""))
+  (lib (name "blinds-2.0-rescue")(type "Legacy")(uri "${KIPRJMOD}/blinds 2.0-rescue.lib")(options "")(descr ""))
 )

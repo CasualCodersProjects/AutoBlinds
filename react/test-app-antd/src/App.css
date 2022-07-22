@@ -1,0 +1,112 @@
+@import 'antd/dist/antd.dark.css';
+
+:root{
+  --primary-color: #4ec9b0;
+  --secondary-color: #9cdcfe;
+  --background-color: #1e1e1e;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  accent-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: medium;
+  display: grid;
+  grid-template-rows:33fr 33fr 33fr;
+  grid-template-columns: 15fr 10fr 75fr;
+  grid-gap: 8px;
+  grid-template-areas:
+  "motor1 config1 schedule1"
+  "motor2 config2 schedule2"
+  "motor3 config3 schedule3";
+  
+}
+
+
+.motor1 {
+  grid-area: motor1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.config1 {
+  grid-area: config1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+.custom-hover:hover{
+  border-color: #4ec9b0;
+}
+
+
+.schedule1 {
+  grid-area: schedule1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.motor2 {
+  grid-area: motor2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.config2 {
+  grid-area: config2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.schedule2 {
+  grid-area: schedule2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.motor3 {
+  grid-area: motor3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.config3 {
+  grid-area: config3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}
+
+.schedule3 {
+  grid-area: schedule3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color);
+}

@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --teal: #4ec9b0;
     --light-blue: #9cdcfe;
     --grey: #1e1e1e;
@@ -44,4 +44,4 @@
     background-color: var(--teal) !important;
     border-color: var(--teal) !important;
     color: var(--grey) !important;
-  }
+  } */
